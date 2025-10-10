@@ -1,5 +1,9 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.shiftwidth = 4
-vim.opt.clipboard = "unnamedplus"
-vim.opt.scrolloff = 8
+vim.o.tabstop = 2
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.shiftwidth = 4
+vim.o.clipboard = "unnamedplus"
+vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
+vim.o.winborder = "rounded"
+vim.o.termguicolors = true

@@ -18,8 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 -- wa9teya
 vim.opt.shiftwidth = 4
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		--add your plugins here
