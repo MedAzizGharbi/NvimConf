@@ -20,9 +20,16 @@ vim.diagnostic.config({
 	},
 })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 -- enabling the lsps
 vim.lsp.enable({
 	"lua_ls",
 	"clangd",
 	"ts_ls",
+	"rust-analyzer",
+	"emmetls",
+	"css-lsp",
+	"tailwind_ls"
 })

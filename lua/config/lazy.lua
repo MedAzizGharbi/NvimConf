@@ -23,6 +23,6 @@ require("lazy").setup({
 		--add your plugins here
 		{import = "config.plugins"},
 	},
-	checker = { enabled = true },
+	checker = { enabled = false },
 	change_detection = {enabled = false},
 })
