@@ -31,5 +31,7 @@ vim.lsp.enable({
 	"rust-analyzer",
 	"emmetls",
 	"css-lsp",
-	"tailwind_ls"
+	"tailwind_ls",
+	"latex"
+
 })
