@@ -6,7 +6,6 @@ vim.lsp.config('*', {
 			}
 		}
 	},
-	root_markers = { '.git' },
 })
 vim.diagnostic.config({
 	virtual_text = true,
@@ -19,7 +18,9 @@ vim.diagnostic.config({
 		source = true,
 	},
 })
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>lf", function()
+	vim.lsp.buf.format({ async = true })
+end, { desc = "Format file" })
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
@@ -32,6 +33,7 @@ vim.lsp.enable({
 	"emmetls",
 	"css-lsp",
 	"tailwind_ls",
-	"latex"
-
+	"latex",
+	"ruff",
+	"pyright"
 })

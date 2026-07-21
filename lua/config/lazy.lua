@@ -15,9 +15,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- wa9teya
-vim.opt.shiftwidth = 4
-
 require("lazy").setup({
 	spec = {
 		--add your plugins here

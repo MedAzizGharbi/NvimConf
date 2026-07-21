@@ -2,6 +2,7 @@ require("config.set")
 require("config.key_binding")
 require("config.lsp")
 require("config.cpp")
+require("config.python")
 require("config.lazy")
 
 vim.cmd[[colorscheme minicyan]]
